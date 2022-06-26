@@ -1,0 +1,19 @@
+.NavBar-ul {
+
+  min-height: 10vh;
+  width: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-size: 1.2rem;
+  color: white;
+  list-style: none;
+
+
+}
+
+.NavBar-li {
+    margin: 30px;
+}
