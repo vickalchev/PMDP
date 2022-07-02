@@ -6,14 +6,25 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  font-size: 1.2rem;
-  color: white;
+  
   list-style: none;
-
+ 
 
 }
 
 .NavBar-li {
     margin: 30px;
+      
+}
+
+.NavBar-NavLink {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: grey;
+  font-size: 1rem;
+}
+
+.NavBar-NavLink:hover {
+  text-decoration-line: underline;
+  color: black;
 }

@@ -10,12 +10,13 @@ export const NavBar = () => {
         <ul className="NavBar-ul">
             {pages.map(page => 
                 <li className="NavBar-li" key={page}>
-                    <NavLink to ={`/${page}`}>
+                    <NavLink className="NavBar-NavLink" to ={`/${page}`}>
                     {page}
                     </NavLink>
                     </li>
                 )}
         </ul>
+        <hr className="NavBar-hr"></hr>
     </div>
    );
 

@@ -8,6 +8,7 @@ export const Header = () => {
         <div className="Header">
             <img src="./Assets/pmdp-logo.png" alt="Parle Moi de Parfum Logo"/>
             <NavBar />
+            
         </div>
     )
 
