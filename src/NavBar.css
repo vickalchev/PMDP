@@ -1,30 +1,21 @@
-.NavBar-ul {
-
-  min-height: 10vh;
-  width: auto;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  
-  list-style: none;
- 
-
+.Nav-Bar {
+    
+    margin-top: 20px;
+    
 }
 
-.NavBar-li {
-    margin: 30px;
-      
+.me-auto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.NavBar-NavLink {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: grey;
-  font-size: 1rem;
+.Nav-Item {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 1.2rem;
 }
 
-.NavBar-NavLink:hover {
-  text-decoration-line: underline;
-  color: black;
+.Nav-Item:hover {
+    text-decoration: underline;
 }

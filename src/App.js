@@ -1,6 +1,9 @@
 import './App.css';
-import {BrowserRouter as Router} from 'react-router-dom';
-import {Header} from './Header';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {NavBar} from './NavBar';
+import {Hero} from './Hero';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import logo from './Assets/pmdp-logo.png';
 
 
 
@@ -8,10 +11,13 @@ import {Header} from './Header';
 function App() {
   return (
     <div className="App">
-        
+      <div className="logo-container">
+      <img className="logo" src={logo} alt=""></img>
+      </div>
       <Router>
-        <Header />
-        
+          <NavBar />
+          <Hero />
+                
       </Router>
     </div>
   );
