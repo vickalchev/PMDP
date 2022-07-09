@@ -1,0 +1,84 @@
+.wake-up-world-container {
+    
+    display: flex;
+    overflow: auto;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+    .wake-up-world-container {
+        flex-direction: column;
+    }
+}
+
+.wake-up-world-info-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.perfume-name {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.price-range {
+    margin-bottom: 30px;
+    color: grey;
+}
+
+.perfume-notes {
+    max-width: fit-content;
+    margin-bottom: 30px;
+    color:grey;
+    font-style: italic;
+    text-align: center;
+}
+.product-description {
+    max-width: fit-content;
+    margin-bottom: 30px;
+}
+
+
+.sizes {
+    margin-bottom: 50px;
+    border: none;
+    border-bottom: solid black 2px;
+    padding-bottom: 10px;
+    color: grey;
+    
+    
+    
+}
+
+.size-option {
+    color: black;
+}
+
+.counter-btn-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+
+
+.buy-button {
+    
+    
+    border: solid 1px rgb(202, 201, 201) ;
+    padding: 10px 20px;
+    border-radius: 2px; 
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.buy-button:hover {
+    background-color: whitesmoke;
+    border: none;
+}

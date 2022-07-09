@@ -1,0 +1,35 @@
+.counter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.counter-output {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    
+    border: solid grey 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-right: 10px;
+
+}
+
+.button-container {
+    margin: 3px;
+}
+
+.control-btn {
+    margin: 3px;
+    background-color: white;
+    border-radius: 2px;
+    border: solid grey 1px;
+}
+
+.control-btn:hover {
+    background-color: whitesmoke;
+    border: none;
+}

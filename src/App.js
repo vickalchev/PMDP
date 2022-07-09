@@ -4,7 +4,7 @@ import {NavBar} from './NavBar';
 import {Hero} from './Hero';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './Assets/pmdp-logo.png';
-import {WakeUpWorld} from './Perfumes';
+import {WakeUpWorld} from './WakeUpWorld';
 
 
 
