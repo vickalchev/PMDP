@@ -1,4 +1,4 @@
-.wake-up-world-container {
+.product-container {
     
     display: flex;
     overflow: auto;
@@ -6,18 +6,18 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .wake-up-world-container {
+    .product-container {
         flex-direction: column;
     }
 }
 
-.wake-up-world-info-container {
+.product-info-container {
     display: flex;
     flex-direction: column;
     padding-top: 40px;
 }
 
-.perfume-name {
+.product-name {
     text-transform: uppercase;
     font-size: 2rem;
 }

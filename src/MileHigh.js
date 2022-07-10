@@ -1,30 +1,34 @@
 import React from 'react';
-import WakeUpWorldBottle from './Assets/wake-up-world-bottle-520x520.jpg';
-import WakeUpWorldBottleBox from './Assets/wake-up-world-bottle-box-520x520.png';
+import MileHigh38Bottle from './Assets/mile-high-38-bottle-520x520.jpg';
+import MileHigh38BottleBox from './Assets/mile-high-38-bottle-box-520x520.jpg';
 import './Product-Style.css';
 import {Counter} from './Counter';
 
-export const WakeUpWorld = () => {
+export const MileHigh = () => {
     return (
         <div className='product-container'>
             <div className='product-img-container'>
                  <img 
                     className='product-img'
-                    src={WakeUpWorldBottle}
-                    alt='Wake Up World Bottle'
-                    onMouseOver={e => e.currentTarget.src=WakeUpWorldBottleBox}
-                    onMouseOut={e => e.currentTarget.src=WakeUpWorldBottle}
+                    src={MileHigh38Bottle}
+                    alt='Mile High 38 Bottle'
+                    onMouseOver={e => e.currentTarget.src=MileHigh38BottleBox}
+                    onMouseOut={e => e.currentTarget.src=MileHigh38Bottle}
                     >
                 </img>         
             </div>
             <div className='product-info-container'>
-                <h1 className='product-name'>Wake Up World</h1>
+                <h1 className='product-name'>Mile High / 38</h1>
                 <p className='price-range'>95,00€ - 155,00€ </p>
                 <p className='perfume-notes'>
-                Bergamot | Green Apple | Turkish Rose | Vanilla | Tonka Bean | Ambroxan | Benzoin
+                Pineapple | Immortelle | Patchouli | Tonka Bean 
                 </p>
                 <p className='product-description'>
-                It's all too easy these days to feel like the entire world has gone mad. Even fragrance, our escape from the actual problems out there, has fallen victim to outlandish and unprovable claims of life-changing benefits, planet-saving virtues, or inscrutably high-minded artistry. At the risk of sounding overly simplistic, whatever happened to just smelling great?
+                Forget travelling to the end of the world, to heavenly beaches or to the top of the highest peaks. </p>
+                
+                <p className='product-description'>
+                Mile High / 38 promises more than that: a one-way trip to the high spheres, a high altitude sniff.
+                
                 </p>
                 <select className='sizes'>
                     <option 
@@ -44,7 +48,7 @@ export const WakeUpWorld = () => {
                 </select>
                 <div className='counter-btn-container'>
                 <Counter />
-                <a className='button-link' href='https://parlemoideparfum.com/en/boutique/wake-up-world/'>
+                <a className='button-link' href='https://parlemoideparfum.com/en/boutique/mile-high-38/'>
                     <button className='buy-button'>Buy</button>
                 </a>  
                 </div>

@@ -1,5 +1,5 @@
 import {React, useState} from 'react';
-import './Container.css';
+import './Counter.css';
 
 
 export const Counter = () => {

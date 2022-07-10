@@ -1,6 +1,6 @@
 import React from 'react';
 import {Navbar, NavbarToggler,Collapse, Nav, NavItem, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem} from 'reactstrap';
-import {NavLink} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
 import './NavBar.css';
 
 
@@ -49,54 +49,101 @@ export const NavBar = (props) => {
           </DropdownToggle>
 
           <DropdownMenu right>
-            <DropdownItem>
-              Wake Up World
-            </DropdownItem>
-            <DropdownItem>
-              Mile High
-            </DropdownItem>
-            <DropdownItem>
-              Saffron Wood
-            </DropdownItem>
-            <DropdownItem>
-              Haute Provence
-            </DropdownItem>
-            <DropdownItem>
-              Gardens of India
-            </DropdownItem>
-            <DropdownItem>
-              Papyrus Oud
-            </DropdownItem>
-            <DropdownItem>
-              Orris Tattoo
-            </DropdownItem>
-            <DropdownItem>
-              Chypre Mojo
-            </DropdownItem>
-            <DropdownItem>
-              Une Tonne de Roses
-            </DropdownItem>
-            <DropdownItem>
-              Guimauve de Noel
-            </DropdownItem>
-            <DropdownItem>
-              Flavia Vanilla
-            </DropdownItem>
-            <DropdownItem>
-              Totally White
-            </DropdownItem>
-            <DropdownItem>
-              Cedar Woodpecker
-            </DropdownItem>
-            <DropdownItem>
-              Milky Musk
-            </DropdownItem>
-            <DropdownItem>
-              Tomboy Neroli 
-            </DropdownItem>
-            <DropdownItem>
-              Woody Pefecto
-            </DropdownItem>
+            <Link className='link' to='wake-up-world'>
+                <DropdownItem className='dropdown-item'>
+                  Wake Up World
+                </DropdownItem>
+            </Link>
+            
+            <Link className='link' to='mile-high-38'>
+              <DropdownItem>
+                Mile High / 38
+              </DropdownItem>
+            </Link>
+            
+            <Link className='link' to='saffron-wood-91'>
+              <DropdownItem>
+                Saffron Wood / 91
+              </DropdownItem>
+            </Link>
+            
+            <Link className='link' to='haute-provence-89'>
+              <DropdownItem>
+                Haute Provence / 89
+              </DropdownItem>
+            </Link>
+
+            <Link className='link' to='gardens-of-india-79'>
+              <DropdownItem>
+                Gardens of India / 79
+              </DropdownItem>
+            </Link>
+
+            <Link className='link' to='papyrus-oud-71'>
+              <DropdownItem>
+                Papyrus Oud / 71
+              </DropdownItem>
+            </Link>
+
+            <Link className='link' to='orris-tattoo-29'>
+              <DropdownItem>
+                Orris Tattoo / 29
+              </DropdownItem>
+            </Link>
+
+            <Link className='link' to='cypre-mojo-45'>
+              <DropdownItem>
+                Chypre Mojo / 45
+              </DropdownItem>
+            </Link>
+
+            <Link className='link' to='une-tonne-de-roses-8' >
+              <DropdownItem>
+                Une Tonne de Roses / 8
+              </DropdownItem>
+            </Link>
+            
+            <Link className='link' to='giumauve-de-noel-31'>
+              <DropdownItem>
+                Guimauve de Noel / 31
+              </DropdownItem>
+            </Link>
+
+            <Link className='link' to='flavia-vanilla-82'>
+              <DropdownItem>
+                Flavia Vanilla / 82
+              </DropdownItem>
+            </Link>
+
+            <Link className='link' to='totally-white-126'>
+              <DropdownItem>
+                Totally White / 126
+              </DropdownItem>
+            </Link>
+
+            <Link className='link' to='cedar-woodpecker-10'>
+              <DropdownItem>
+                Cedar Woodpecker / 10
+              </DropdownItem>
+            </Link>
+
+            <Link className='link' to='milky-musk-39'>
+              <DropdownItem>
+                Milky Musk / 39
+              </DropdownItem>
+            </Link>
+
+            <Link className='link' to='tomboy-neroli-65'>
+              <DropdownItem>
+                Tomboy Neroli / 65
+              </DropdownItem>
+            </Link>
+
+            <Link className='link' to='woody-perfecto-107'>
+              <DropdownItem>
+                Woody Pefecto / 107
+              </DropdownItem>
+            </Link>
             
           </DropdownMenu>
         </UncontrolledDropdown>
