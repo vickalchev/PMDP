@@ -20,6 +20,7 @@ import {CedarWoodpecker} from './CedarWoodpecker';
 import {MilkyMusk} from './MilkyMusk';
 import {TomboyNeroli} from './TomboyNeroli';
 import {WoodyPerfecto} from './WoodyPerfecto';
+import {Concept} from './Concept';
 
 
 
@@ -52,6 +53,7 @@ function App() {
           <Route path='/milky-musk-39' element={<MilkyMusk />} />
           <Route path='/tomboy-neroli-65' element={<TomboyNeroli />} />
           <Route path='/woody-perfecto-107' element={<WoodyPerfecto />} />
+          <Route path='/concept' element={<Concept />} />
         </Routes>
      
       </Router>
