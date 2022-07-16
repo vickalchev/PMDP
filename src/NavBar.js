@@ -91,7 +91,7 @@ export const NavBar = (props) => {
               </DropdownItem>
             </Link>
 
-            <Link className='link' to='cypre-mojo-45'>
+            <Link className='link' to='chypre-mojo-45'>
               <DropdownItem>
                 Chypre Mojo / 45
               </DropdownItem>
@@ -103,7 +103,7 @@ export const NavBar = (props) => {
               </DropdownItem>
             </Link>
             
-            <Link className='link' to='giumauve-de-noel-31'>
+            <Link className='link' to='guimauve-de-noel-31'>
               <DropdownItem>
                 Guimauve de Noel / 31
               </DropdownItem>

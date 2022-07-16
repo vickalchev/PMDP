@@ -9,6 +9,17 @@ import {MileHigh} from './MileHigh';
 import {SaffronWood} from './SaffronWood';
 import {HauteProvence} from './HauteProvence';
 import {GardensOfIndia} from './GardensOfIndia';
+import {PapyrusOud} from './PapyrusOud';
+import {OrrisTattoo} from './OrrisTattoo';
+import {ChypreMojo} from './ChypreMojo';
+import {UneTonneDeRoses} from './UneTonneDeRoses';
+import {GuimauveDeNoel} from './GuimauveDeNoel';
+import {FlaviaVanilla} from './FlaviaVanilla';
+import {TotallyWhite} from './TotallyWhite';
+import {CedarWoodpecker} from './CedarWoodpecker';
+import {MilkyMusk} from './MilkyMusk';
+import {TomboyNeroli} from './TomboyNeroli';
+import {WoodyPerfecto} from './WoodyPerfecto';
 
 
 
@@ -30,6 +41,17 @@ function App() {
           <Route path='/saffron-wood-91' element={<SaffronWood />} />
           <Route path='/haute-provence-89' element={<HauteProvence />} />
           <Route path='/gardens-of-india-79' element={<GardensOfIndia />} />
+          <Route path='/papyrus-oud-71' element={<PapyrusOud />} />
+          <Route path='/orris-tattoo-29' element={<OrrisTattoo />} />
+          <Route path='/chypre-mojo-45' element={<ChypreMojo />} />
+          <Route path='/une-tonne-de-roses-8' element={<UneTonneDeRoses />} />
+          <Route path='/guimauve-de-noel-31' element={<GuimauveDeNoel />} />
+          <Route path='/flavia-vanilla-82' element={<FlaviaVanilla />} />
+          <Route path='/totally-white-126' element={<TotallyWhite />} />
+          <Route path='/cedar-woodpecker-10' element={<CedarWoodpecker />} />
+          <Route path='/milky-musk-39' element={<MilkyMusk />} />
+          <Route path='/tomboy-neroli-65' element={<TomboyNeroli />} />
+          <Route path='/woody-perfecto-107' element={<WoodyPerfecto />} />
         </Routes>
      
       </Router>

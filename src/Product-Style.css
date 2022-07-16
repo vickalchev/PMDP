@@ -11,6 +11,11 @@
     }
 }
 
+.product-img {
+    max-width: 520px;
+    max-height: auto;
+}
+
 .product-info-container {
     display: flex;
     flex-direction: column;
