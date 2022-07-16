@@ -1,6 +1,7 @@
 import React from 'react';
-import HauteProvence89Bottle from './Assets/haute-provence-89-bottle-520x520.jpg';
-import HauteProvence89BottleBox from './Assets/haute-provence-89-bottle-box-520x520.jpg';
+import {Link} from 'react-router-dom';
+import HauteProvenceBottle from './Assets/haute-provence-89-bottle-520x520.jpg';
+import HauteProvenceBottleBox from './Assets/haute-provence-89-bottle-box-520x520.jpg';
 import './Product-Style.css';
 import {Counter} from './Counter';
 
@@ -10,10 +11,10 @@ export const HauteProvence = () => {
             <div className='product-img-container'>
                  <img 
                     className='product-img'
-                    src={HauteProvence89Bottle}
+                    src={HauteProvenceBottle}
                     alt='Haute Provence 89 Bottle'
-                    onMouseOver={e => e.currentTarget.src=HauteProvence89BottleBox}
-                    onMouseOut={e => e.currentTarget.src=HauteProvence89Bottle}
+                    onMouseOver={e => e.currentTarget.src=HauteProvenceBottleBox}
+                    onMouseOut={e => e.currentTarget.src=HauteProvenceBottle}
                     >
                 </img>         
             </div>
@@ -55,5 +56,23 @@ export const HauteProvence = () => {
                 </div>
             </div>
         </div>
+    )
+}
+
+export const HauteProvenceThumbnail = () => {
+    return (
+            <div className='thumbnail-container'>
+        <Link className='thumbnail-link' to='./haute-provence-89'>
+                <img 
+                className='thumbnail-img'
+                src={HauteProvenceBottle}
+                alt='saffron wood bottle'
+                onMouseOver = {e => e.currentTarget.src=HauteProvenceBottleBox}
+                onMouseOut = {e => e.currentTarget.src=HauteProvenceBottle}
+                />
+                <h3 className='thumbnail-name'>Haute Provence / 89</h3>
+        </Link>
+                <p className='price-range'>95,00€ - 155,00€ </p>
+            </div>
     )
 }

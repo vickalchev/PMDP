@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import PapyrusOudBottle from './Assets/papyrus-oud-71-bottle-520x520.jpg';
 import PapyrusOudBottleBox from './Assets/papyrus-oud-71-bottle-box-520x520.jpg';
 import './Product-Style.css';
@@ -57,5 +58,23 @@ export const PapyrusOud = () => {
                 </div>
             </div>
         </div>
+    )
+}
+
+export const PapyrusOudThumbnail = () => {
+    return (
+            <div className='thumbnail-container'>
+        <Link className='thumbnail-link' to='./papyrus-oud-71'>
+                <img 
+                className='thumbnail-img'
+                src={PapyrusOudBottle}
+                alt='papyrus oud bottle'
+                onMouseOver = {e => e.currentTarget.src=PapyrusOudBottleBox}
+                onMouseOut = {e => e.currentTarget.src=PapyrusOudBottle}
+                />
+                <h3 className='thumbnail-name'>Papyrus Oud / 71</h3>
+        </Link>
+                <p className='price-range'>95,00€ - 155,00€ </p>
+            </div>
     )
 }

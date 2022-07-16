@@ -1,5 +1,6 @@
 import React from 'react';
-import GardensOfIndia89Bottle from './Assets/gardens-of-india-79-bottle-520x520.jpg';
+import {Link} from 'react-router-dom';
+import GardensOfIndiaBottle from './Assets/gardens-of-india-79-bottle-520x520.jpg';
 import GardensOfIndiaBottleBox from './Assets/gardens-of-india-79-bottle-box-520x520.jpg';
 import './Product-Style.css';
 import {Counter} from './Counter';
@@ -10,10 +11,10 @@ export const GardensOfIndia = () => {
             <div className='product-img-container'>
                  <img 
                     className='product-img'
-                    src={GardensOfIndia89Bottle}
+                    src={GardensOfIndiaBottle}
                     alt='Haute Provence 89 Bottle'
                     onMouseOver={e => e.currentTarget.src=GardensOfIndiaBottleBox}
-                    onMouseOut={e => e.currentTarget.src=GardensOfIndia89Bottle}
+                    onMouseOut={e => e.currentTarget.src=GardensOfIndiaBottle}
                     >
                 </img>         
             </div>
@@ -57,5 +58,23 @@ export const GardensOfIndia = () => {
                 </div>
             </div>
         </div>
+    )
+}
+
+export const GardensOfIndiaThumbnail = () => {
+    return (
+            <div className='thumbnail-container'>
+        <Link className='thumbnail-link' to='./gardens-of-india-79'>
+                <img 
+                className='thumbnail-img'
+                src={GardensOfIndiaBottle}
+                alt='saffron wood bottle'
+                onMouseOver = {e => e.currentTarget.src=GardensOfIndiaBottleBox}
+                onMouseOut = {e => e.currentTarget.src=GardensOfIndiaBottle}
+                />
+                <h3 className='thumbnail-name'>Gardens of India / 79</h3>
+        </Link>
+                <p className='price-range'>95,00€ - 155,00€ </p>
+            </div>
     )
 }

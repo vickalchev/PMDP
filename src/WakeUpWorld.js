@@ -1,8 +1,10 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import WakeUpWorldBottle from './Assets/wake-up-world-bottle-520x520.jpg';
 import WakeUpWorldBottleBox from './Assets/wake-up-world-bottle-box-520x520.png';
 import './Product-Style.css';
 import {Counter} from './Counter';
+
 
 export const WakeUpWorld = () => {
     return (
@@ -50,5 +52,23 @@ export const WakeUpWorld = () => {
                 </div>
             </div>
         </div>
+    )
+}
+
+ export const WakeUpWorldThumbnail = () => {
+    return (
+            <div className='thumbnail-container'>
+        <Link className='thumbnail-link' to='./wake-up-world'>
+                <img 
+                className='thumbnail-img'
+                src={WakeUpWorldBottle}
+                alt='wakeup world bottle'
+                onMouseOver = {e => e.currentTarget.src=WakeUpWorldBottleBox}
+                onMouseOut = {e => e.currentTarget.src=WakeUpWorldBottle}
+                />
+                <h3 className='thumbnail-name'>Wake Up World</h3>
+        </Link>
+                <p className='price-range'>95,00€ - 155,00€ </p>
+            </div>
     )
 }

@@ -1,17 +1,18 @@
 import React from 'react';
-import HeaderImg from './Assets/concept-header-img.jpg';
-import StoreImg from './Assets/concept-store-image.jpg';
+import HeaderImg from '../Assets/concept-header-img.jpg';
+import StoreImg from '../Assets/concept-store-image.jpg';
+import './ConceptStyle.css';
 
 export const Concept = () => {
     return (
         <div className='concept-container'>
             <img 
-            clasName='concept-header-img'
+            className='concept-header-img'
             src={HeaderImg}
             alt='smelling strips on black bkg'
             />
             <div className='text-col-container'>
-                <div className='first-text-container'>
+                <div className='text-container'>
                     <h2>All About Family</h2>
                     <p>
                     Parle Moi de Parfum is all about family. Benjamin Almairac grew up with stories about perfume that his father brought home from work. He dreamt of creating a venue right in the centre of Paris where the public could discover the finest fragrances that Michel Almairac had always dreamed of creating and staging.
@@ -30,8 +31,8 @@ export const Concept = () => {
                     “Because when you spend your life imagining and composing for others, you sooner or later want to create with your own dreams and share them. With your children first of all. And then with others.” Michel
                     </p>
                 </div>
-                <div className='second-text-container'>
-                <p2>Talk About Perfume and Nothing Else  </p2>
+                <div className='text-container'>
+                <h2>Talk About Perfume and Nothing Else  </h2>
                 <p>
                 In bright and relaxing retail spaces at 10 rue de Sévigné and 22 rue du Four, Benjamin has created a lab – complete with raw materials and weighing station – where a young perfumer works every day.
                 </p>

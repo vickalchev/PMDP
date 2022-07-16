@@ -87,3 +87,32 @@
     background-color: whitesmoke;
     border: none;
 }
+
+.thumbnail-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+}
+
+.thumbnail-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.thumbnail-link:hover {
+    color: black;
+}
+
+.thumbnail-name {
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.thumbnail-name:hover {
+    text-decoration: underline;
+
+}

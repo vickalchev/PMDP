@@ -1,6 +1,7 @@
 import React from 'react';
-import SaffronWood91Bottle from './Assets/saffron-wood-91-bottle-520x520.jpg';
-import SaffronWood91BottleBox from './Assets/saffron-wood-91-bottle-box-520x520.jpg';
+import {Link} from 'react-router-dom';
+import SaffronWoodBottle from './Assets/saffron-wood-91-bottle-520x520.jpg';
+import SaffronWoodBottleBox from './Assets/saffron-wood-91-bottle-box-520x520.jpg';
 import './Product-Style.css';
 import {Counter} from './Counter';
 
@@ -10,10 +11,10 @@ export const SaffronWood = () => {
             <div className='product-img-container'>
                  <img 
                     className='product-img'
-                    src={SaffronWood91Bottle}
+                    src={SaffronWoodBottle}
                     alt='Mile High 38 Bottle'
-                    onMouseOver={e => e.currentTarget.src=SaffronWood91BottleBox}
-                    onMouseOut={e => e.currentTarget.src=SaffronWood91Bottle}
+                    onMouseOver={e => e.currentTarget.src=SaffronWoodBottleBox}
+                    onMouseOut={e => e.currentTarget.src=SaffronWoodBottle}
                     >
                 </img>         
             </div>
@@ -56,5 +57,23 @@ export const SaffronWood = () => {
                 </div>
             </div>
         </div>
+    )
+}
+
+export const SaffronWoodThumbnail = () => {
+    return (
+            <div className='thumbnail-container'>
+        <Link className='thumbnail-link' to='./saffron-wood-91'>
+                <img 
+                className='thumbnail-img'
+                src={SaffronWoodBottle}
+                alt='saffron wood bottle'
+                onMouseOver = {e => e.currentTarget.src=SaffronWoodBottleBox}
+                onMouseOut = {e => e.currentTarget.src=SaffronWoodBottle}
+                />
+                <h3 className='thumbnail-name'>Saffron Wood / 91</h3>
+        </Link>
+                <p className='price-range'>95,00€ - 155,00€ </p>
+            </div>
     )
 }

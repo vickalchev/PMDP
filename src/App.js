@@ -20,7 +20,8 @@ import {CedarWoodpecker} from './CedarWoodpecker';
 import {MilkyMusk} from './MilkyMusk';
 import {TomboyNeroli} from './TomboyNeroli';
 import {WoodyPerfecto} from './WoodyPerfecto';
-import {Concept} from './Concept';
+import {Concept} from './Concept/Concept';
+import {ProductLine} from './ProductLine/ProductLine';
 
 
 
@@ -36,8 +37,14 @@ function App() {
         </NavLink>
         <NavBar />
         <Routes>   
-          <Route path="/" element={<Hero />} />
-          <Route path="/wake-up-world" element={<WakeUpWorld />} />
+          <Route path='/' element={
+            <div>           
+              <Hero />
+              <ProductLine />
+            </div>
+              } />
+          <Route path='/' element={<ProductLine />} />
+          <Route path='/wake-up-world' element={<WakeUpWorld />} />
           <Route path='/mile-high-38' element={<MileHigh />} />
           <Route path='/saffron-wood-91' element={<SaffronWood />} />
           <Route path='/haute-provence-89' element={<HauteProvence />} />
