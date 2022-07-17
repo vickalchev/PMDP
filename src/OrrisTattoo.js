@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import OrrisTattooBottle from './Assets/orris-tattoo-29-bottle-520x520.jpg';
 import OrrisTattooBottleBox from './Assets/orris-tattoo-29-bottle-box-520x520.jpg';
 import './Product-Style.css';
@@ -57,5 +58,23 @@ export const OrrisTattoo = () => {
                 </div>
             </div>
         </div>
+    )
+}
+
+export const OrrisTattooThumbnail = () => {
+    return (
+            <div className='thumbnail-container'>
+        <Link className='thumbnail-link' to='/orris-tattoo-29'>
+                <img 
+                className='thumbnail-img'
+                src={OrrisTattooBottle}
+                alt='orris tattoo bottle'
+                onMouseOver = {e => e.currentTarget.src=OrrisTattooBottleBox}
+                onMouseOut = {e => e.currentTarget.src=OrrisTattooBottle}
+                />
+                <h3 className='thumbnail-name'>Orris Tattoo / 29</h3>
+        </Link>
+                <p className='price-range'>95,00€ - 155,00€ </p>
+            </div>
     )
 }

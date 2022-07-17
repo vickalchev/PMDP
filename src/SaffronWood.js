@@ -63,7 +63,7 @@ export const SaffronWood = () => {
 export const SaffronWoodThumbnail = () => {
     return (
             <div className='thumbnail-container'>
-        <Link className='thumbnail-link' to='./saffron-wood-91'>
+        <Link className='thumbnail-link' to='/saffron-wood-91'>
                 <img 
                 className='thumbnail-img'
                 src={SaffronWoodBottle}

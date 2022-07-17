@@ -64,7 +64,7 @@ export const GardensOfIndia = () => {
 export const GardensOfIndiaThumbnail = () => {
     return (
             <div className='thumbnail-container'>
-        <Link className='thumbnail-link' to='./gardens-of-india-79'>
+        <Link className='thumbnail-link' to='/gardens-of-india-79'>
                 <img 
                 className='thumbnail-img'
                 src={GardensOfIndiaBottle}

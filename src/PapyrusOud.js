@@ -64,7 +64,7 @@ export const PapyrusOud = () => {
 export const PapyrusOudThumbnail = () => {
     return (
             <div className='thumbnail-container'>
-        <Link className='thumbnail-link' to='./papyrus-oud-71'>
+        <Link className='thumbnail-link' to='/papyrus-oud-71'>
                 <img 
                 className='thumbnail-img'
                 src={PapyrusOudBottle}

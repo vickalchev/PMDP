@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import WoodyPerfectoBottle from './Assets/woody-perfecto-107-bottle-520x520.jpg';
 import WoodyPerfectoBottleBox from './Assets/woody-perfecto-107-bottle-box-520x520.jpg';
 import './Product-Style.css';
@@ -59,5 +60,24 @@ export const WoodyPerfecto = () => {
                 </div>
             </div>
         </div>
+    )
+}
+
+
+export const WoodyPerfectoThumbnail = () => {
+    return (
+            <div className='thumbnail-container'>
+        <Link className='thumbnail-link' to='/woody-perfecto-107'>
+                <img 
+                className='thumbnail-img'
+                src={WoodyPerfectoBottle}
+                alt='woody perfecto bottle'
+                onMouseOver = {e => e.currentTarget.src=WoodyPerfectoBottleBox}
+                onMouseOut = {e => e.currentTarget.src=WoodyPerfectoBottle}
+                />
+                <h3 className='thumbnail-name'>Woody Perefecto 107</h3>
+        </Link>
+                <p className='price-range'>95,00€ - 155,00€ </p>
+            </div>
     )
 }

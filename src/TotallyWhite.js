@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import TotallyWhiteBottle from './Assets/totally-white-126-bottle-520x520.jpg';
 import TotallyWhiteBottleBox from './Assets/totally-white-126-bottle-box-520x520.jpg';
 import './Product-Style.css';
@@ -55,5 +56,23 @@ export const TotallyWhite = () => {
                 </div>
             </div>
         </div>
+    )
+}
+
+export const TotallyWhiteThumbnail = () => {
+    return (
+            <div className='thumbnail-container'>
+        <Link className='thumbnail-link' to='/totally-white-126'>
+                <img 
+                className='thumbnail-img'
+                src={TotallyWhiteBottle}
+                alt='totally white bottle'
+                onMouseOver = {e => e.currentTarget.src=TotallyWhiteBottleBox}
+                onMouseOut = {e => e.currentTarget.src=TotallyWhiteBottle}
+                />
+                <h3 className='thumbnail-name'>Totally White / 126</h3>
+        </Link>
+                <p className='price-range'>95,00€ - 155,00€ </p>
+            </div>
     )
 }

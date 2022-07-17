@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import TomboyNeroliBottle from './Assets/tomboy-neroli-65-bottle-520x520.jpg';
 import TomboyNeroliBottleBox from './Assets/tomboy-neroli-65-bottle-box-520x520.jpg';
 import './Product-Style.css';
@@ -59,5 +60,23 @@ export const TomboyNeroli = () => {
                 </div>
             </div>
         </div>
+    )
+}
+
+export const TomboyNeroliThumbnail = () => {
+    return (
+            <div className='thumbnail-container'>
+        <Link className='thumbnail-link' to='/tomboy-neroli-65'>
+                <img 
+                className='thumbnail-img'
+                src={TomboyNeroliBottle}
+                alt='tomboy neroli bottle'
+                onMouseOver = {e => e.currentTarget.src=TomboyNeroliBottleBox}
+                onMouseOut = {e => e.currentTarget.src=TomboyNeroliBottle}
+                />
+                <h3 className='thumbnail-name'>Tomboy Neroli / 65</h3>
+        </Link>
+                <p className='price-range'>95,00€ - 155,00€ </p>
+            </div>
     )
 }

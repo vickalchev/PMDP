@@ -23,6 +23,9 @@ import {WoodyPerfecto} from './WoodyPerfecto';
 import {Concept} from './Concept/Concept';
 import {ProductLine} from './ProductLine/ProductLine';
 import {DiscoverBtn} from './DiscoverButton/DiscoverButton';
+import {Perfumes} from './Perfumes/Perfumes';
+import {Shops} from './Shops/Shops';
+
 
 
 
@@ -46,6 +49,7 @@ function App() {
               } />
           <Route path='/' element={<ProductLine />} />
           <Route path='/wake-up-world' element={<WakeUpWorld />} />
+          {/* <Route path='/perfumes/wake-up-world' element={<WakeUpWorld />} /> */}
           <Route path='/mile-high-38' element={<MileHigh />} />
           <Route path='/saffron-wood-91' element={<SaffronWood />} />
           <Route path='/haute-provence-89' element={<HauteProvence />} />
@@ -62,6 +66,8 @@ function App() {
           <Route path='/tomboy-neroli-65' element={<TomboyNeroli />} />
           <Route path='/woody-perfecto-107' element={<WoodyPerfecto />} />
           <Route path='/concept' element={<Concept />} />
+          <Route path='/perfumes' element={<Perfumes />} />
+          <Route path='/shops' element={<Shops />} />
         </Routes>
      
       </Router>

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import CedarWoodpeckerBottle from './Assets/cedar-woodpecker-10-bottle-520x520.jpg';
 import CedarWoodpeckerBottleBox from './Assets/cedar-woodpecker-10-bottle-box-bottle-520x520.jpg';
 import './Product-Style.css';
@@ -59,5 +60,23 @@ export const CedarWoodpecker = () => {
                 </div>
             </div>
         </div>
+    )
+}
+
+export const CedarWoodpeckerThumbnail = () => {
+    return (
+            <div className='thumbnail-container'>
+        <Link className='thumbnail-link' to='/cedar-woodpecker-10'>
+                <img 
+                className='thumbnail-img'
+                src={CedarWoodpeckerBottle}
+                alt='cedar woodpecker bottle'
+                onMouseOver = {e => e.currentTarget.src=CedarWoodpeckerBottleBox}
+                onMouseOut = {e => e.currentTarget.src=CedarWoodpeckerBottle}
+                />
+                <h3 className='thumbnail-name'>Cedar Woodpecker / 10</h3>
+        </Link>
+                <p className='price-range'>95,00€ - 155,00€ </p>
+            </div>
     )
 }

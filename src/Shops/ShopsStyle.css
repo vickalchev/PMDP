@@ -1,0 +1,17 @@
+.shops-container {
+    width: 90%;
+}
+
+.first-shop-container {
+    display: flex;
+    
+}
+
+.second-shop-container {
+    display: flex;
+}
+
+.shop-img-container {
+    
+    margin: 0px 20px;
+}

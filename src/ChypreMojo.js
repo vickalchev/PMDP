@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import ChypreMojoBottle from './Assets/chypre-mojo-45-bottle-520x520.jpg';
 import ChypreMojoBottleBox from './Assets/chypre-mojo-45-bottle-box-520x520.jpg';
 import './Product-Style.css';
@@ -57,5 +58,23 @@ export const ChypreMojo = () => {
                 </div>
             </div>
         </div>
+    )
+}
+
+export const ChypreMojoThumbnail = () => {
+    return (
+            <div className='thumbnail-container'>
+        <Link className='thumbnail-link' to='/chypre-mojo-45'>
+                <img 
+                className='thumbnail-img'
+                src={ChypreMojoBottle}
+                alt='chypre mojo bottle'
+                onMouseOver = {e => e.currentTarget.src=ChypreMojoBottleBox}
+                onMouseOut = {e => e.currentTarget.src=ChypreMojoBottle}
+                />
+                <h3 className='thumbnail-name'>Chypre Mojo / 45</h3>
+        </Link>
+                <p className='price-range'>95,00€ - 155,00€ </p>
+            </div>
     )
 }

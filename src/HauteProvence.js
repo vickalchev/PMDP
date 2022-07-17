@@ -62,7 +62,7 @@ export const HauteProvence = () => {
 export const HauteProvenceThumbnail = () => {
     return (
             <div className='thumbnail-container'>
-        <Link className='thumbnail-link' to='./haute-provence-89'>
+        <Link className='thumbnail-link' to='/haute-provence-89'>
                 <img 
                 className='thumbnail-img'
                 src={HauteProvenceBottle}

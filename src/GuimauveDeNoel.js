@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import GuimauveDeNoelBottle from './Assets/guimauve-de-noel-31-bottle-520x520.jpg';
 import GuimauveDeNoelBottleBox from './Assets/guimauve-de-noel-31-bottle-box-520x520.jpg';
 import './Product-Style.css';
@@ -57,5 +58,23 @@ export const GuimauveDeNoel = () => {
                 </div>
             </div>
         </div>
+    )
+}
+
+export const GuimauveDeNoelThumbnail = () => {
+    return (
+            <div className='thumbnail-container'>
+        <Link className='thumbnail-link' to='/guimauve-de-noel-31'>
+                <img 
+                className='thumbnail-img'
+                src={GuimauveDeNoelBottle}
+                alt='guimauve de noel bottle'
+                onMouseOver = {e => e.currentTarget.src=GuimauveDeNoelBottleBox}
+                onMouseOut = {e => e.currentTarget.src=GuimauveDeNoelBottle}
+                />
+                <h3 className='thumbnail-name'>Guimauve de Noel / 31</h3>
+        </Link>
+                <p className='price-range'>95,00€ - 155,00€ </p>
+            </div>
     )
 }

@@ -61,7 +61,7 @@ export const MileHigh = () => {
 export const MileHighThumbnail = () => {
     return (
             <div className='thumbnail-container'>
-        <Link className='thumbnail-link' to='./mile-high-38'>
+        <Link className='thumbnail-link' to='/mile-high-38'>
                 <img 
                 className='thumbnail-img'
                 src={MileHighBottle}

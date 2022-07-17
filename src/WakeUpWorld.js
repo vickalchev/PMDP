@@ -58,7 +58,7 @@ export const WakeUpWorld = () => {
  export const WakeUpWorldThumbnail = () => {
     return (
             <div className='thumbnail-container'>
-        <Link className='thumbnail-link' to='./wake-up-world'>
+        <Link className='thumbnail-link' to='/wake-up-world'>
                 <img 
                 className='thumbnail-img'
                 src={WakeUpWorldBottle}
