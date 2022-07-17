@@ -22,7 +22,7 @@ import {TomboyNeroli} from './TomboyNeroli';
 import {WoodyPerfecto} from './WoodyPerfecto';
 import {Concept} from './Concept/Concept';
 import {ProductLine} from './ProductLine/ProductLine';
-
+import {DiscoverBtn} from './DiscoverButton/DiscoverButton';
 
 
 
@@ -41,6 +41,7 @@ function App() {
             <div>           
               <Hero />
               <ProductLine />
+              <DiscoverBtn />
             </div>
               } />
           <Route path='/' element={<ProductLine />} />
