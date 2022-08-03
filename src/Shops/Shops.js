@@ -7,9 +7,10 @@ import SaintGermainShop from '../Assets/st-germain-store.jpg';
 export const Shops = () => {
     return (
         <div className='shops-container'>
-            <div className='first-shop-container'>
+            <div className='single-shop-container'>
                 <div className='shop-img-container'>
-                    <img 
+                    <img
+                        className='shop-img' 
                         src={LeMaraisShop}
                         alt='Le Marais Shop'
                     />
@@ -34,7 +35,7 @@ export const Shops = () => {
 
                 </div>
             </div>
-            <div className='second-shop-container'>
+            <div className='single-shop-container'>
                 <div className='shop-info-container'>
                 <h3>St Germain des Pres</h3>
                     <p className='address'>
@@ -54,9 +55,10 @@ export const Shops = () => {
                     </p>
                 </div>
                 <div className='shop-img-container'>
-                    <img 
-                            src={SaintGermainShop}
-                            alt='Saint Germain Shop'
+                    <img    
+                        className='shop-img'    
+                        src={SaintGermainShop}
+                        alt='Saint Germain Shop'
                         />
                 </div>
             </div>
